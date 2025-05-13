@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'KronaOne-Regular';
+    src: url('./fonts/KronaOne-Regular.ttf');
+}
+
+* {
+    scroll-behavior: smooth !important; 
+    
+}
+
+body {
+    font-family: 'KronaOne-Regular', Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #fff;
+    font-size: 18px;
+    overflow-x: hidden;     
+}
+
+a {
+    position: relative;
+	color: #ffffff;
+	cursor: pointer;
+	line-height: 1;
+    text-decoration: none;
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #ffffff;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 90px;
+}
+.logo{
+    height: 70px;
+    width: 365px;
+    padding-top: 10px;
+}
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 8px;
+    scroll-behavior: smooth !important;
+    width: 650px;
+    height: 30px;
+    margin-top: 35px;
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+.regisration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 270px;
+    height: 60px;
+}
+ .reg-img {
+    width: 45px;
+    height: 50px;
+ }
+
+ .reg-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 220px;
+    height: 80px;
+ }
+
+ .reg-menu li{
+    list-style: none;
+ }
+
+ .rmenu-item{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+ }
+
+ .reg-img{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-top: 20px;
+ }
+
+.home-title{
+    display: flex;
+    justify-content: center;
+}
+
+.home-info{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.catalog-list{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 700px);
+    gap: 60px 12px;
+}
+
+.about-us-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.about-us-info2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-us-info2-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.contacts-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+footer{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+}
+/* Стили для профиля */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    color: white;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-card h3 {
+    color: #FFE100;
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #FFE100;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #8d7d00;
+    color: white;
+}
